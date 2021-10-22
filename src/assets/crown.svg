@@ -10,7 +10,7 @@
                 <polygon id="Triangle" fill-opacity="0.262838724" fill="#101A1A" points="25 8 40 39 10 39"></polygon>
                 <circle id="Oval" fill="#5E6363" cx="2" cy="9" r="2"></circle>
                 <circle id="Oval" fill="#5E6363" cx="25" cy="2" r="2"></circle>
-                <circle id="Oval" fill="#5E6363" cx="48" cy="9" r="2"></circle>
+                <circle id="Oval" fill="#5E6363" cx="48" cy="9" r="2"></circle>\
             </g>
         </g>
     </g>
