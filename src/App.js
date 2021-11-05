@@ -38,17 +38,32 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={HomePage} />
+          <Route
+            exact
+            path="/"
+            render={() =>
+              this.props.currentUser ? <HomePage /> : <Redirect to="/signin" />
+            }
+          />
           <Route exact path="/shop" component={ShopPage} />
-          <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to="/"/>) : (<AuthenticationPage/>) }/>
+          <Route
+            exact
+            path="/signin"
+            render={() =>
+              this.props.currentUser ? (
+                <Redirect to="/" />
+              ) : (
+                <AuthenticationPage />
+              )
+            }
+          />
         </Switch>
       </div>
     );
   }
 }
 
-
-const mapStateToProps = ({user}) => ({
+const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser,
 });
 
