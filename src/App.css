@@ -11,3 +11,7 @@ text-decoration: none;
 * {
   box-sizing: border-box;
 }
+
+text {
+  color:black
+}
