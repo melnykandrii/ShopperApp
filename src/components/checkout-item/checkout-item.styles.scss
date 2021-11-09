@@ -22,11 +22,22 @@
     .item-total {
       width: 20%;
     }
-    .name,
-    .quantity {
+    .name
+     {
       padding-left: 40px;
     }
-
+    .quantity{
+      display: flex;
+      padding-left: 20px;
+      .arrow {
+        cursor: pointer;
+        font-size: 10px;
+        padding-top: 5px;
+      }
+      .value {
+        margin: 0 10px;
+      }
+    }
     .price {
       padding-left: 10px;
     }
