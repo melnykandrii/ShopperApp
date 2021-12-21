@@ -3,14 +3,14 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCategorySection } from "../../redux/category/category.selector";
 import MenuItem from "../menu-item/menu-item.component";
-import "./category.style.scss";
+import { CategoryMenu } from "./category.styles";
 
 const Category = ({ sections }) => (
-  <div className="category-menu">
+  <CategoryMenu>
     {sections.map(({ id, ...otherData }) => (
       <MenuItem key={id} {...otherData} />
     ))}
-  </div>
+  </CategoryMenu>
 );
 
 const mapStateToProps = createStructuredSelector({

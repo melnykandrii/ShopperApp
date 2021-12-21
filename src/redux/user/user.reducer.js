@@ -1,4 +1,3 @@
-//import { UserActionTypes } from "./user.types";
 import { SET_CURRENT_USER } from "./user.actions";
 
 const INITIAL_STATE = {

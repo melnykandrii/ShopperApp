@@ -1,11 +1,11 @@
 import React from "react";
 import Category from "../../components/categories/category.component";
-import "./homepage.styles.scss";
+import { HomePageComponent } from "./homepage.styles";
 
 const HomePage = () => (
-  <div className="homepage">
+  <HomePageComponent>
     <Category />
-  </div>
+  </HomePageComponent>
 );
 
 export default HomePage;
